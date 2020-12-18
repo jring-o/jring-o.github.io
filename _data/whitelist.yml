@@ -7,9 +7,13 @@ projects:
   goal: Amicable Numbers is an independent research project that uses Internet-connected
     computers to find new amicable pairs. Currently searching the 10^20 range.
   sponsor: Private
-  cpu: 'yes'
-  gpu: 'yes'
-  gdpr: 'no'
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_arm: "y"
+  supports_nvidia_gpu: "y"
+  supports_amd_gpu: "y"
+  gdpr: "no"
   team: https://sech.me/boinc/Amicable/team_display.php?teamid=1806
   stats: https://gridcoinstats.eu/project/Amicable_Numbers
 
@@ -23,9 +27,14 @@ projects:
     asteroid together with the rotation period and the direction of the spin axis
     are derived.
   sponsor: Charles University in Prague
-  cpu: 'yes'
-  gpu: 'yes'
-  gdpr: 'no'
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_bsd: "y"
+  supports_android: "y"
+  supports_arm: "y"
+  supports_nvidia_gpu: "y"
+  gdpr: "no"
   team: https://asteroidsathome.net/boinc/team_display.php?teamid=2218
   stats: https://gridcoinstats.eu/project/asteroids@home
 
@@ -35,9 +44,13 @@ projects:
   topic: "Mathematics, Computing, Games"
   goal: Attempting to disprove the Collatz Conjecture.
   sponsor: Private
-  cpu: 'yes'
-  gpu: 'yes'
-  gdpr: 'no'
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_nvidia_gpu: "y"
+  supports_amd_gpu: "y"
+  supports_intel_gpu: "y"
+  gdpr: "no"
   team: https://boinc.thesonntags.com/collatz/team_display.php?teamid=3029
   stats: https://gridcoinstats.eu/project/collatz_conjecture
 
@@ -47,9 +60,11 @@ projects:
   topic: "Physical Science"
   goal: Darkmatter/Universe Model Research
   sponsor: Department of Astronomy at the University of Illinois at Urbana-Champaign
-  cpu: 'yes'
-  gpu: 'no'
-  gdpr: 'no'
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_virtualbox: "y"
+  gdpr: "no"
   team: https://www.cosmologyathome.org/team_display.php?teamid=3637
   stats: https://gridcoinstats.eu/project/cosmology@home
 
@@ -60,9 +75,15 @@ projects:
   goal: Search for spinning neutron (pulsars) stars using data from the LIGO gravitational-wave
     detectors, the Arecibo radio telescope, and the Fermi gamma-ray satellite
   sponsor: Univ. of Wisconsin - Milwaukee, Max Planck Institute
-  cpu: 'yes'
-  gpu: 'yes'
-  gdpr: 'yes'
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_arm: "y"
+  supports_android: "y"
+  supports_nvidia_gpu: "y"
+  supports_amd_gpu: "y"
+  supports_intel_gpu: "y"
+  gdpr: "yes"
   gdpr-enable-steps: https://einsteinathome.org/content/gdpr-new-website-features-and-statistics-export-option
   team: https://einsteinathome.org/community/teams/185236
   stats: https://gridcoinstats.eu/project/einstein@home
@@ -73,9 +94,10 @@ projects:
   topic: "Biology, Medicine"
   goal: Full-atom molecular simulations of proteins
   sponsor: Private Sponsors, accept donations in Bitcoin
-  cpu: 'yes'
-  gpu: 'yes'
-  gdpr: 'no'
+  supports_windows: "y"
+  supports_linux: "y"
+  supports_nvidia_gpu: "y"
+  gdpr: "no"
   team: https://www.gpugrid.net/team_display.php?teamid=3493
   stats: https://gridcoinstats.eu/project/gpugrid
 
@@ -87,9 +109,12 @@ projects:
     Digital Sky Survey. This project enables research in both astroinformatics and
     computer science.
   sponsor: Rensselaer Polytechnic Institute
-  cpu: 'yes'
-  gpu: 'yes'
-  gdpr: 'no'
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_nvidia_gpu: "y"
+  supports_amd_gpu: "y"
+  gdpr: "no"
   team: https://milkyway.cs.rpi.edu/milkyway/team_display.php?teamid=6566
   stats: https://gridcoinstats.eu/project/milkyway@home
 
@@ -100,9 +125,13 @@ projects:
   goal: Enables the study of the fundamental laws of Minecraft to answer 
         unanswered questions regarding the features and true limits of the game.
   sponsor: Private
-  cpu: 'no'
-  gpu: 'yes'
-  gdpr: 'no'
+  supports_windows: "y"
+  supports_linux: "y"
+  supports_arm: "y"
+  supports_nvidia_gpu: "y"
+  supports_amd_gpu: "y"
+  supports_intel_gpu: "y"
+  gdpr: "no"
   team: https://minecraftathome.com/minecrafthome/team_display.php?teamid=1840
   stats: https://gridcoinstats.eu/project/minecraft@home
 
@@ -115,9 +144,11 @@ projects:
     the publicly available modulus cannot be factored. If it is factored, the private
     key can be easily calculated.
   sponsor: California State University Fullerton
-  cpu: 'yes'
-  gpu: 'no'
-  gdpr: 'no'
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_bsd: "y"
+  gdpr: "no"
   team: https://escatter11.fullerton.edu/nfs/team_display.php?teamid=2353
   stats: https://gridcoinstats.eu/project/nfs@home
   
@@ -128,10 +159,13 @@ projects:
   goal: Research in number theory. Number theorists can mine the data for interesting
     patterns to help them formulate conjectures about number fields.
   sponsor: Arizona State University, school of Mathematics
-  cpu: 'yes'
-  gpu: 'yes'
-  gdpr: 'yes'
-  gdpr-enable-steps: 'https://numberfields.asu.edu/NumberFields/forum_thread.php?id=355#2134'
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_nvidia_gpu: "y"
+  supports_amd_gpu: "y"
+  gdpr: "yes"
+  gdpr-enable-steps: "https://numberfields.asu.edu/NumberFields/forum_thread.php?id=355#2134"
   team: https://numberfields.asu.edu/NumberFields/team_display.php?teamid=2069
   stats: https://gridcoinstats.eu/project/numberfields@home
 
@@ -141,10 +175,11 @@ projects:
   topic: "Mathematics, Computing, Games"
   goal: OLDK is building a database of canonical forms of diagonal Latin squares of
     the 10th order
-  sponsor: ''
-  cpu: 'yes'
-  gpu: 'no'
-  gdpr: 'no'
+  sponsor: "Independent"
+  supports_windows: "y"
+  supports_linux: "y"
+  supports_bsd: "y"
+  gdpr: "no"
   team: https://boinc.multi-pool.info/latinsquares/team_display.php?teamid=48
   stats: https://gridcoinstats.eu/project/odlk1
 
@@ -155,9 +190,13 @@ projects:
   goal: Protein structure prediction that may ultimately lead to finding cures for
     some major human diseases.
   sponsor: University of Washington
-  cpu: 'yes'
-  gpu: 'no'
-  gdpr: 'no'
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_arm: "y"
+  supports_virtualbox: "y"
+  supports_android: "y"
+  gdpr: "no"
   team: https://boinc.bakerlab.org/rosetta/team_display.php?teamid=12575
   stats: https://gridcoinstats.eu/project/rosetta@home
 
@@ -166,11 +205,14 @@ projects:
   img: "ic-project-srbase.png"
   topic: "Mathematics, Computing, Games"
   goal: Attempting to solve Sierpinski / Riesel Bases up to 1030.
-  sponsor: The project is in collaboration with the Mersenne CRUS project.
-  cpu: 'yes'
-  gpu: 'yes'
-  gdpr: 'no'
-  team: http://srbase.my-firewall.org/sr5//team_display.php?teamid=99
+  sponsor: Collaboration with the Mersenne CRUS project.
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_nvidia_gpu: "y"
+  supports_amd_gpu: "y"
+  gdpr: "no"
+  team: http://srbase.my-firewall.org/sr5/team_display.php?teamid=99
   stats: https://gridcoinstats.eu/project/srbase
 
 - name: SiDock@Home
@@ -178,10 +220,12 @@ projects:
   img: "ic-project-sidock-home.png"
   topic: "Biology, Medicine"
   goal: Works on drug discovery with COVID-19 as its primary focus
-  sponsor: COVID.SI project
-  cpu: 'yes'
-  gpu: 'no'
-  gdpr: 'no'
+  sponsor: COVID.SI project and the Karelian Research Center of the Russian Academy of Sciences.
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_arm: "y"
+  gdpr: "no"
   team: https://www.sidock.si/sidock/team_display.php?teamid=54
   stats: https://www.gridcoinstats.eu/project/sidock@home
 
@@ -189,15 +233,13 @@ projects:
   link: https://gene.disi.unitn.it/test/
   img: "ic-project-tn-grid.png"
   topic: "Mathematics, Computing, Games"
-  goal: 'The gene@home project is an implementation of the PC-IM algorithm, whose
-    purpose is to expand Gene Regulatory Networks (GRN). Each network is a graph that
-    specifies the causal relationships inside this set of genes, and helps in studying
-    the gene expression phenomenon: the process through which the DNA is transcribed
-    into RNA and the RNA translated into proteins.'
+  goal: "Expanding each single gene of an organism."
   sponsor: National Research Council of Italy (CNR)
-  cpu: 'yes'
-  gpu: 'no'
-  gdpr: 'no'
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_arm: "y"
+  gdpr: "no"
   team: https://gene.disi.unitn.it/test/team_display.php?teamid=61
   stats: https://www.gridcoinstats.eu/project/tn-grid
   
@@ -205,11 +247,13 @@ projects:
   link: https://universeathome.pl/universe/
   img: "ic-project-universe-home.png"
   topic: "Physical Science"
-  goal: Physics and Astronomy
+  goal: "Simulations that deal with the fundamental problems of the Universe."
   sponsor: University of Warsaw
-  cpu: 'yes'
-  gpu: 'no'
-  gdpr: 'yes'
+  supports_windows: "y"
+  supports_linux: "y"
+  supports_arm: "y"
+  supports_android: "y"
+  gdpr: "yes"
   gdpr-enable-steps: https://www.reddit.com/r/gridcoin/comments/ega7k5/universehome_requires_consent_for_stats_export/
   team: https://universeathome.pl/universe/team_display.php?teamid=1822
   stats: https://gridcoinstats.eu/project/universe@home
@@ -220,10 +264,13 @@ projects:
   topic: "Multiple applications"
   goal: FightAIDS@home, Smash Childhood Cancer, fight Tuberculosis, research better
     materials for solar panels.
-  sponsor: Sponsored by the IBM responsibility initiative
-  cpu: 'yes'
-  gpu: 'yes'
-  gdpr: 'yes'
+  sponsor: IBM Corporate Citizenship
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_arm: "y"
+  supports_android: "y"
+  gdpr: "yes"
   gdpr-enable-steps: https://www.worldcommunitygrid.org/ms/viewDataSharing.action
   team: https://secure.worldcommunitygrid.org/team/viewTeamInfo.do?teamId=BBNGDQS832
   stats: https://gridcoinstats.eu/project/World_Community_Grid
@@ -236,8 +283,11 @@ projects:
     BOINC Wrapper technology
   sponsor: Supported by Rechenkraft.net e.V. , accept private Donations, also accept
     Bitcoin
-  cpu: 'yes'
-  gpu: 'no'
-  gdpr: 'no'
+  supports_windows: "y"
+  supports_mac: "y"
+  supports_linux: "y"
+  supports_arm: "y"
+  supports_android: "y"
+  gdpr: "no"
   team: https://www.rechenkraft.net/yoyo/team_display.php?teamid=1475
   stats: https://gridcoinstats.eu/project/yoyo@home
