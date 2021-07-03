@@ -65,17 +65,6 @@ projects:
   team: "https://www.gpugrid.net/team_display.php?teamid=3493"
   stats: "https://gridcoinstats.eu/project/gpugrid"
 
-- name: "LHC@Home"
-  link: "https://lhcathome.cern.ch/lhcathome/index.php"
-  img: "ic-project-lhc-home.png"
-  topic: "Mathematics, Computing, Games"
-  goal: "Accelerator Physics"
-  sponsor: "CERN"
-  cpu: "yes"
-  gpu: "no"
-  team: "https://lhcathome.cern.ch/lhcathome/team_display.php?teamid=8128"
-  stats: "https://gridcoinstats.eu/project/lhc@home_classic"
-
 - name: "Milkyway@home"
   link: "http://milkyway.cs.rpi.edu/milkyway/"
   img: "ic-project-milkyway-home.png"
