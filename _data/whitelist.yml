@@ -16,7 +16,7 @@ projects:
 - name: Asteroids@home
   link: https://asteroidsathome.net/boinc/
   img: "ic-project-asteroids-home.png"
-  topic: "Mathematics, Computing, Games"
+  topic: "Physical Science"
   goal: Asteroid research - it uses photometric measurements of asteroids observed
     by professional big all-sky surveys as well as 'backyard' astronomers. The data
     is processed using the lightcurve inversion method and a 3D shape model of an
@@ -44,7 +44,7 @@ projects:
 - name: Cosmology@Home
   link: https://www.cosmologyathome.org/
   img: "ic-project-cosmology-home.png"
-  topic: "Mathematics, Computing, Games"
+  topic: "Physical Science"
   goal: Darkmatter/Universe Model Research
   sponsor: Department of Astronomy at the University of Illinois at Urbana-Champaign
   cpu: 'yes'
@@ -56,7 +56,7 @@ projects:
 - name: Einstein@home
   link: https://einsteinathome.org
   img: "ic-project-einstein-home.png"
-  topic: "Mathematics, Computing, Games"
+  topic: "Physical Science"
   goal: Search for spinning neutron (pulsars) stars using data from the LIGO gravitational-wave
     detectors, the Arecibo radio telescope, and the Fermi gamma-ray satellite
   sponsor: Univ. of Wisconsin - Milwaukee, Max Planck Institute
@@ -70,7 +70,7 @@ projects:
 - name: GPUgrid
   link: https://www.gpugrid.net/
   img: "ic-project-gpugrid.png"
-  topic: "Mathematics, Computing, Games"
+  topic: "Biology, Medicine"
   goal: Full-atom molecular simulations of proteins
   sponsor: Private Sponsors, accept donations in Bitcoin
   cpu: 'yes'
@@ -82,7 +82,7 @@ projects:
 - name: Milkyway@home
   link: http://milkyway.cs.rpi.edu/milkyway/
   img: "ic-project-milkyway-home.png"
-  topic: "Mathematics, Computing, Games"
+  topic: "Physical Science"
   goal: Creation of a 3D map of the Milky Way galaxy using data gathered by the Sloan
     Digital Sky Survey. This project enables research in both astroinformatics and
     computer science.
@@ -151,7 +151,7 @@ projects:
 - name: Rosetta@Home
   link: https://boinc.bakerlab.org/rosetta/
   img: "ic-project-rosetta-home.png"
-  topic: "Mathematics, Computing, Games"
+  topic: "Biology, Medicine"
   goal: Protein structure prediction that may ultimately lead to finding cures for
     some major human diseases.
   sponsor: University of Washington
@@ -176,7 +176,7 @@ projects:
 - name: SiDock@Home
   link: https://www.sidock.si/sidock/
   img: "ic-project-sidock-home.png"
-  topic: "Mathematics, Computing, Games"
+  topic: "Biology, Medicine"
   goal: Works on drug discovery with COVID-19 as its primary focus
   sponsor: COVID.SI project
   cpu: 'yes'
@@ -204,7 +204,7 @@ projects:
 - name: Universe@home
   link: https://universeathome.pl/universe/
   img: "ic-project-universe-home.png"
-  topic: "Mathematics, Computing, Games"
+  topic: "Physical Science"
   goal: Physics and Astronomy
   sponsor: University of Warsaw
   cpu: 'yes'
@@ -217,7 +217,7 @@ projects:
 - name: World Community Grid
   link: https://www.worldcommunitygrid.org/
   img: "ic-project-world-community-grid.png"
-  topic: "Mathematics, Computing, Games"
+  topic: "Multiple applications"
   goal: FightAIDS@home, Smash Childhood Cancer, fight Tuberculosis, research better
     materials for solar panels.
   sponsor: Sponsored by the IBM responsibility initiative
@@ -231,7 +231,7 @@ projects:
 - name: yoyo@home
   link: https://www.rechenkraft.net/yoyo/
   img: "ic-project-yoyo-home.png"
-  topic: "Mathematics, Computing, Games"
+  topic: "Multiple applications"
   goal: Brings existing distributed computing projects to the BOINC world using the
     BOINC Wrapper technology
   sponsor: Supported by Rechenkraft.net e.V. , accept private Donations, also accept
