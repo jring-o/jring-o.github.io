@@ -120,9 +120,11 @@
                 <div>
                     <h6>Exchanges</h6>
                     <ul>
-                        <li><a href="https://txbit.io/Asset/GRC">Txbit.io</a></li>
-                        <li><a href="https://www.southxchange.com/Market/Book/GRC/BTC">SouthXchange</a></li>
-                        <li><a href="https://flyp.me/">Flyp.me</a></li>
+                        {% for exchange in site.data.exchanges.centralized-exchanges %}
+                        <li>
+                            <a href="{{exchange.link}}">{{exchange.name}}</a>
+                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
 
