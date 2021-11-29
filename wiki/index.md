@@ -1,5 +1,5 @@
 ---
-title: Gridcoin Wiki Home
+title: Gridcoin Wiki
 layout: wiki
 redirect_from:
   - "/Wiki/"
@@ -24,8 +24,8 @@ There are no limitations to a single BOINC project, providing the
 flexibility to be rewarded for virtually any type of computational
 process.
 
-Gridcoin was launched on October 16th, 2013 by Rob Halförd, following [an
-announcement on CryptocurrencyTalk](https://web.archive.org/web/20150622170203/cryptocointalk.com/topic/1416-gridcoin-grc-information-classic-in-retirement/).
+Gridcoin was launched on October 16th, 2013 by Rob Halförd, following an
+announcement on [CryptocurrencyTalk](https://cryptocurrencytalk.com/topic/1416-gridcoin-grc-information-classic-in-retirement/).
 
 The coin compensates the coin miners (researchers) for participating in
 [BOINC](boinc "wikilink") projects that may lead to advances in
@@ -53,7 +53,7 @@ The compute power to secure the block chain is minimal.
 
 ## Metrics
 
-**[Gridcoin-Classic](gridcoin-classic "wikilink") - Retired**
+**[Gridcoin-Classic](Gridcoin-Classic "wikilink") - Retired**
 
   - Launched: October 16th, 2013
   - Retired: April 20th, 2015
@@ -110,7 +110,6 @@ scientific computations instead of securing the blockchain.
 
 ## Official Resources
   <!-- TODO: [Volunteers, Roles & Privileges](Volunteers,-Roles,-&-Privileges "wikilink") -->
-  - [Other Wiki Pages](pages "wikilink")
   - [Website](https://gridcoin.us/)
   - [BOINCstats](https://boincstats.com/en/stats/-1/team/detail/118094994/overview)
   - [Netsoft](http://www.boinc.netsoft-online.com/e107_plugins/boinc/bp_home.php)
@@ -124,7 +123,6 @@ scientific computations instead of securing the blockchain.
   - Block Explorers:
       - [Gridcoinstats](https://gridcoinstats.eu/)
       - [Gridcoin.network](https://gridcoin.network/)
-      - [Gridcoin.ch](https://gridcoin.ch/dashboard)
 
 <!-- end list -->
 
@@ -150,12 +148,10 @@ scientific computations instead of securing the blockchain.
       - [AUR daemon](https://aur.archlinux.org/packages/gridcoinresearchd/)
 
 <!-- end list -->
-  {% comment %} This lists out all the exchanges from _data/exchanges.yml {% endcomment %}
-  - Exchanges:
-      {%- for exchange in site.data.exchanges.centralized-exchanges %}
-      - [{{exchange.name}}]({{exchange.link}})
-      {%- endfor %}
 
+  - Exchanges:
+      - [Txbit](https://txbit.io/Trade/GRC/BTC)
+      - [SouthXchange](https://www.southxchange.com/Market/Book/GRC/BTC)
 
 <!-- end list -->
 
@@ -167,18 +163,21 @@ scientific computations instead of securing the blockchain.
 <!-- end list -->
 
   - 3rd-Party wallets:
+      - [Coinomi](https://coinomi.com/)
       - [HolyTransaction](https://holytransaction.com/)
 
 <!-- end list -->
 
   - Forums:
+      - [Cryptocurrencytalk](https://cryptocurrencytalk.com/forum/464-gridcoin-grc/)
+      - [Cryptocurrencytalk macOS](https://cryptocurrencytalk.com/topic/13139-os-x-builds-feedback-bug-reporting/)
       - [Bitcointalk](https://bitcointalk.org/index.php?topic=324118.0)
       - [Steemit](https://steemit.com/created/gridcoin)
       - [Steemit Community](https://steemit.com/created/hive-161364)
       - [Reddit](https://reddit.com/r/gridcoin)
       - [Reddit (ru)](https://reddit.com/r/russiangridcoin)
       - [Gridcoin Telegram](https://t.me/gridcoin)
-      - [Discord](https://discord.gg/jf9XX4a)
+      - [Discord](https://discord.me/page/gridcoin)
       - [Slack](https://join.slack.com/t/teamgridcoin/shared_invite/enQtMjk2NTI4MzAwMzg0LTUzMmY0YjdiNzYxYzQ0MDc3MGE1NjQ3Nzg2NWMzZTUzMjAwZjdhMWI1YWUzMDE4YzQyZjVjMjMzOTc1M2RmMmM/)
       - IRC: [#gridcoin](https://kiwiirc.com/client/irc.freenode.net:6697/#gridcoin) and [#gridcoin-help](https://kiwiirc.com/client/irc.freenode.net:6697/#gridcoin-help) on freenode.
 
@@ -193,6 +192,7 @@ scientific computations instead of securing the blockchain.
   - Charts:
       - [Coinmarketcap](https://coinmarketcap.com/currencies/gridcoin/)
       - [CoinGecko](https://coingecko.com/en/coins/gridcoin-research)
+      - [CoinCap](http://www.coincap.io/GRC)
       - [Github contributions](https://github.com/gridcoin-community/Gridcoin-Research/graphs/contributors)
         
 <!-- end list -->
@@ -200,10 +200,8 @@ scientific computations instead of securing the blockchain.
   - Faucets:
     - [Freegridco.in](https://freegridco.in/)
     - [Gridcoin Switzerland](https://gridcoin.ch/faucet)
-    - [Gridcoinstats](https://gridcoinstats.eu/faucet)
 
 ## Other Wikis
 
   - [Wikipedia](https://en.wikipedia.org/wiki/Gridcoin)
   - [Russian Reddit Wiki](https://reddit.com/r/russiangridcoin/wiki/)
-  - [Old Gridcoin Wiki](https://github.com/gridcoin-community/Gridcoin-Wiki/wiki)

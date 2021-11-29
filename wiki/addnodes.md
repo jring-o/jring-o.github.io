@@ -7,61 +7,46 @@ redirect_from:
 
 
 # Gridcoin addnodes
-## Background
-Addnodes are nodes (wallets) that your wallet will try to connect to when it
-starts up. Adding more can help if you have a low connection count because it
-will get more chances to find other nodes
+### This is a list of nodes for your gridcoinresearch.conf file to make syncing much smoother.  
 
-You can add these into your config file with `addnode=ADDNODE`. 
-See the [config file](config-file "wikilink") page about how to change your config
+You can also add the node with the command: "addnode <node>
+<add|remove|onetry>" in the debug console.
 
-**Make sure you have at least a few addnodes in your config or you won't be able to connect to the network.**
+Last updated: Mon Oct 28 13:54:39 UTC 2019
 
-You can also add the node with the command: `addnode <node> <add|remove|onetry>` 
-in the debug console.
+Windows: `C:\Users\<username>\AppData\Roaming\GridcoinResearch`
 
+macOS:   `/Users/<username>/Library/Application Support/GridcoinResearch`
 
-## List Of Addnodes
-
-Tables with a list of addnodes, and their region. 
-
-The status on this wiki page is not updated frequently.
-
+Linux:   `/home/<username>/.GridcoinResearch`
 
 ### Mainnet
 
-List of addnodes for the main network. These are the ones you most likely care about.
-
-See [cycy's hourly updating list](https://addnode.cycy.me) for a more up to date status.
-
 ------------
-
-#### Default
-These are included in the default config, but if you leave them out of the config, it will not connect to these addnodes 
-
-| Node | Region |
-|-|-|
-| addnode-us-central.cycy.me | US-central |
-| ec2-3-81-39-58.compute-1.amazonaws.com | US-east |
-| gridcoin.ddns.net | UK |
-| seeds.gridcoin.ifoggz-network.xyz | Canada |
-| seed.gridcoin.pl | Europe |
-| www.grcpool.com | US-east |
-
 
 #### Online (connected within the last 24 hours)
 
 | Node | Region |
 |----|-----|
-| grcnode.tahvok.com                      | Germany |
-| grcnode.thefoxie.eu                     | Germany |
-| grc.leftist.eu                          | Germany |
-| gridcoin.network                        | France |
-| gridhost.ddns.net                       | UK |
-| node.gridcoin.network                   | France |
-| swe.tplinkdns.com                       | Sweden |
-| tarmoilves.eu                           | Estonia |
-| vancouver01.gridcoin.ifoggz-network.xyz | Canada |
+| addnode-us-central.cycy.me                 | US-central |
+| by.gridcoin.pl                             | Belarus |
+| ch.gridcoin.pl                             | Switzerland |
+| ec2-3-81-39-58.compute-1.amazonaws.com     | US-east |
+| fi.gridcoin.pl                             | Finland |
+| grcnode.tahvok.com                         | Germany |
+| gridcoin.crypto.fans                       | Germany |
+| gridcoin.hopto.org                         | Germany |
+| gridcoin.network                           | France |
+| gridhost.ddns.net                          | UK |
+| london.grcnode.co.uk                       | UK |
+| node.grcpool.com                           | US-east |
+| node.gridcoin.network                      | France |
+| node1.chick3nman.com                       | US-central |
+| pl.gridcoin.pl                             | Poland |
+| seattle.grcnode.deluxe-host.net            | US-west |
+| seeds.gridcoin.ifoggz-network.xyz          | Canada |
+| tarmoilves.eu                              | Estonia |
+| vancouver01.gridcoin.ifoggz-network.xyz    | Canada |
 
 ------------
 
@@ -69,45 +54,63 @@ These are included in the default config, but if you leave them out of the confi
 
 | Node | Region |    
 | ---- | ------ |
-| grcmagnitude.com                        | Unknown |
-| gridcoin.asia                           | Unknown |
-| gridcoin.bunnyfeet.fi                   | US-west |
-| gridcoin.certic.info                    | UK |
-| gridcoin.hopto.org                      | Germany |
-| gridcoins.org                           | UK |
-| node1.chick3nman.com                    | US-central |
-| nuad.de                                 | Germany |
-| seattle.grcnode.deluxe-host.net         | US-west |
+| grcexplorer.neuralminer.io                 | US |
+| gridcoin.asia                              | Unknown |
+| gridcoin.bunnyfeet.fi                      | US-west |
+| gridcoin.certic.info                       | UK |
+| gridcoin.ddns.net                          | UK |
+| gridcoins.org                              | UK |
+| nl.gridcoin.pl                             | Netherlands |
+| nuad.de                                    | Germany |
 
 ------------
 
+#### Dead (hostname resolution failed)
+
+| Node | Region |    
+| ---- | ------ |
+| cloud.sparlin.me                           | Unknown |
+| grcmagnitude.com                           | Unknown |
+| grcnode.nems.space                         | US |
+| grcnode01.neuralminer.io                   | US-central |
+| grcnode02.neuralminer.io                   | US-east |
+| grcnode03.neuralminer.io                   | Ireland |
+| grcnode04.neuralminer.io                   | Korea |
+| grcnode05.neuralminer.io                   | US-west |
+| gridcoin.univunix.com                      | Luxembourg |
+| ils.gridcoin.co.il                         | Canada |
+| is.gridcoin.pl                             | Iceland |
+| node.gridcoin.us                           | US |
+| node.gridcoinapp.xyz                       | Germany |
+| quebec.gridcoin.co.il                      | Canada |
+| seattle.gridcoin.stablenode.net            | US-west |
+| toronto01.gridcoin.ifoggz-network.xyz      | Canada |
+
 ### Testnet
-
-List of addnodes for the [test network](testnet "wikilink")
-
-[cycy's hourly updating list](https://addnode.cycy.me/testnet)
 
 ------------
 
 #### Online (connected within the last 24 hours)
 
-| Node | Region |
+| Node | Region |    
 | ---- | ------ |
-| addnode-us-central.cycy.me | US-central |
-| ec2-3-81-39-58.compute-1.amazonaws.com  | US-east |
-| gridhost.ddns.net                       | UK |
-| ormgas.com                              | Sweden |
-| swe.tplinkdns.com                       | Sweden |
-| tarmoilves.eu                           | Estonia |
+|addnode-us-central.cycy.me                 | US-central|
+|ec2-3-81-39-58.compute-1.amazonaws.com     | US-east|
+|gridcoin.ddns.net                          | UK|
+|gridcoin.network                           | France|
+|gridhost.ddns.net                          | UK|
+|tarmoilves.eu                              | Estonia|
+|testnet.dihelix.com                        | US|
 
 ------------
 
 #### Unreachable (offline or reached max connections)
 
-| Node | Region |
+| Node | Region |    
 | ---- | ------ |
-| gridcoin.ddns.net                       | UK |
-| gridcoin.network                        | France |
-| test.grcpool.com                        | US-east |
-| testnet.dihelix.com                     | US |
-| vancouver01.gridcoin.ifoggz-network.xyz | Canada |
+|ormgas.com                                 | Sweden|
+|test.grcpool.com                           | US-east|
+|testnet.grcnode.co.uk                      | Netherlands|
+|vancouver01.gridcoin.ifoggz-network.xyz    | Canada|
+|**Dead (hostname resolution failed):** |               
+|toronto01.gridcoin.ifoggz-network.xyz      | Canada|
