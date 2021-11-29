@@ -24,10 +24,10 @@ Almost all of your computing power can be directed at beneficial scientific and 
 research while crunching Gridcoin.
 
 See the list of [Advantages &
-Features](advantages&features "wikilink").
+Features](advantages-and-features "wikilink").
 
 ---
-### How could 'useful' work for a cryptocurrency be verified without repeating the work or trusting a central server?
+### How can useful work in a cryptocurrency be verified without repeating the work or trusting a central server?
 
 In Gridcoin, work units are given out by distributed project nodes
 within the BOINC network which uses their independent calculation to
@@ -35,15 +35,14 @@ reward research. Gridcoin compares participants in each project by their
 subsidiary credits earned in BOINC to measure performance in relation to
 dynamic inner project network average.
 
-BOINC has been rewarding scientific work units in a credit system since
-2003. In case a project maintainer maliciously decides to give out more
+BOINC has been rewarding scientific work units in a credit system since 2003. 
+In case a project maintainer maliciously decides to give out more
 credits than appropriate, it only affects the inner project competition.
 The maximum share of new Gridcoins for this project stays the same
 percentage (subject to the number of total projects). And projects can be
 removed by a blockchain vote.
 
-Security in Gridcoin is derived from Blackcoin's industry-leading
-Proof-of-Stake.
+Security in Gridcoin is based on Proof-of-Stake.
 
 ---
 # Crunching (Research & Mining Equivalent)
@@ -51,8 +50,8 @@ Proof-of-Stake.
 ---
 ### How do I start crunching?
 Consult these guides: 
-* [Solo](../guides/boinc-install.htm)
-* [Pool](../guides/pool.htm)
+* [Solo](/guides/boinc-install.htm "sitelink")
+* [Pool](/guides/pool.htm "sitelink")
 
 ---
 ### My CPID is not in the network, What do I do?
@@ -73,7 +72,7 @@ Next, go to Help -\> Debug Window, go to the Console tab and type
 `advertisebeacon` without the quotes.
 
 This will (if successful) send a small transaction at the cost of
-1 GRC. This should add your CPID with the next superblock.
+1 GRC. This should add your CPID with the next [superblock](superblock "wikilink").
 
 To see if your CPID is included, go to the Console and type `beaconreport`. 
 
@@ -104,7 +103,7 @@ You can also lookup your address on a block explorer.
 ---
 ### Reward calculation: what is magnitude?
 
-Magnitude is calculated separately for each project. When calculating research rewards, a user's magnitude across every project is added together.
+Magnitude is calculated separately for each project. When calculating research rewards, a user's magnitude across every project is added together. See the [magnitude wiki page](magnitude "wikilink")
 
 ---
 ### I had a magnitude for some time but it dropped to 0. What happened?
@@ -152,10 +151,9 @@ Yes, there are currently 2 operational pools:
 ---
 ### I am crunching for the pool but the wallet still shows INVESTOR and 0 magnitude. Is that ok?
 
-That is perfectly normal when pool-mining you do work for the pool's
-account and as a reward get transactions from the pool for the work you
-did. Because of this you do not work for your own CPID and have no
-magnitude.
+On the beacon menu, make sure to click on "Pool" button at the start. Click
+start over if you don't see a selection option. This doesn't technically matter, 
+but it will help get rid of error messages that aren't relevant to you
 
 ---
 ### I am crunching for the pool but even though I work on projects this is not shown on the profile page of the pool. What can I do?
@@ -235,9 +233,26 @@ only.
 ---
 ### What happens if I stake on a fork?
 
-When you stake on a fork, the stake you see is not actually legitimate. When your wallet figures out that it is on a fork, you will see these rewards disappear as the wallet corrects itself. This process happens automatically. While frustrating, once off of the fork, you are still able to stake again. 
+When you stake on a [fork](forks "wikilink"), the stake you see is not actually a real stake on the main chain. When your wallet figures out that it is on a fork, you will see these rewards disappear as the wallet corrects itself. This process happens automatically. While frustrating, once off of the fork, you are still able to stake again. 
 
 ---
+
+### My pending rewards are stuck at 16384 GRC
+
+If you see your pending rewards at 16384 GRC, you have hit the maximum amount of
+Gridcoin that can be sent per stake. When you stake you will only earn 16384 GRC
+and any amount of extra work done will not be included. If you keep hitting this
+limit, make sure you are running your wallet to stake 24/7 (or close to it). If you are, 
+you should get more Gridcoin to stake more frequently. 
+
+If you want to get an estimate of how likely you are to stake *before* that limit, you can try solving 
+for that probability using:
+`16384/(magnitude/4) = -ln( 1 - Probability ) * 10000 / Balance * Difficulty`.  
+The probability there are the odds that you stake at least once at any point before that limit (it's a confidence interval).
+
+Note: It is highly unlikely for most users to run into this limit. It requires a very
+high magnitude to possibly run into this.
+
 # BOINC
 
 ---
@@ -299,12 +314,12 @@ away from a recognised team for that project.
 ---
 ### How can I see my Researching Status?
 
-If you have some BOINC credits, you are in a recognised team and your email
-is correct in the gridcoinresearch.conf file. You should see a list of
+Press the beacon button and if you go through the steps for setup, you should see
+an overview of all the relevant information. You can also click on the project tab
+for information on a per project level
 
-your magnitude in each project when entering "*explainmagnitude*" to
-the debug console of the wallet (Help -\> Debug Window -\> Console). It
-may take 24-48 hours for new accounts to be populated.
+Without using the GUI, you can also see a list of your magnitude in each project 
+by using the `explainmagnitude` [RPC command](rpc "wikilink")
 
 ---
 ### What does "diff" exactly measure? What does it tell if it's high or low?
@@ -349,16 +364,16 @@ number (not hash).
 
 Then do
 
-showblock blocknumber
+`showblock blocknumber`
 
 And compare the details with details from explorer.
 
 If you do want to get a block by hash, you would have
 to:
 
-getblockhash blocknumber
+`getblockhash blocknumber`
 
-getblock blockhash
+`getblock blockhash`
 
 But that is a little longer
 
@@ -386,9 +401,6 @@ The wallet has an automated backup in place that will make backups every 24 hour
 Different methods were discussed in the Gridcoin Community Classroom
 \#003: <https://www.youtube.com/watch?v=JxrjUwX5XvA>
 
-ref:
-<https://cryptocurrencytalk.com/topic/1331-new-coin-launch-announcement-grc-gridcoin/?view=findpost&p=158422>
-
 ---
 ### How to compress my wallet getting rid of orphans?
 
@@ -415,7 +427,10 @@ The quick and easy way.
 5. Copy it to the data directory and rename it to wallet.dat.
 6. Restart the wallet.
 
-If it still doesn't start you can try using the -salvagewallet flag.
+If it still doesn't start you can try using the `-salvagewallet` flag. This will
+try to pull whatever it can out of the wallet.dat file and will create a new
+file. Rename that new file to wallet.dat and try launching the wallet again
+without the `-salvagewallet` flag
 
 ---
 # Sync
@@ -428,15 +443,12 @@ Just try to just wait it out the wallet should automatically fix itself.
 If it still hasn't gone up after a few hours try this:
 
 1.  Close the client
-2.  Clean out your Gridcoin data folder EXCEPT for wallet.dat, your
-    GridcoinResearch.conf file and the folders walletbackups and testnet, if present.
-3.  Restart the wallet and wait for it to sync. If you don't want to wait you can also use the snapshot which you can get [Here](http://download.gridcoin.us/download/downloadstake/signed/snapshot.zip).
+2.  In your Gridcoin data folder, delete the accrual folder, the txleveldb folder, 
+and blk00*.dat (with * being any number).
+3.  Restart the wallet and wait for it to sync. If you don't want to wait you can also use the snapshot
+ which you can use by clicking on File -> Snapshot or using the `-snapshotdownload` [command line argument](cmd-options "wikilink") 
 
 You can also try running the wallet as an administrator.
-
-There is also an [official
-thread](https://cryptocointalk.com/topic/20303-gridcoin-proof-of-research-connection-sync-problem-thread/)
-for sync problem if it didn't work.
 
 ---
 ### How could I test whether I am in sync with the network?
@@ -457,7 +469,7 @@ explorer will sync up with you and your connected nodes at some point.
 
 Ensure you are running the latest wallet version.
 
-You can try using the snapshot which you can get [Here](http://download.gridcoin.us/download/downloadstake/signed/snapshot.zip).
+You can try using a snapshot (File -> Snapshot Download) or you can download from [here](https://snapshot.gridcoin.us/snapshot.zip) and apply it manually.
 
 While it downloads, delete the peers.dat in your data folder - you may have a bad peer group.
 
@@ -492,7 +504,7 @@ Gridcoin Classic was the first iteration of Gridcoin. Gridcoin classic
 is no longer used and all coins were converted to Gridcoin Research
 coins via Proof of Burn. The Burn process ended on April 20, 2015. If you
 missed the Burn deadline, your coins are now in the possession of the
-Gridcoin Foundation and can no longer be claimed.
+[Gridcoin Foundation](foundation "wikilink") and can no longer be claimed.
 
 ---
 # Development
@@ -505,21 +517,30 @@ Gridcoin Foundation and can no longer be claimed.
 ---
 ### How could I participate in testnet?
 
-Start the client with the -testnet flag.
-
-[More info can be found here.](testnet "wikilink")
+Read the how to help section on the [testnet wiki page](testnet "wikilink")
 
 ---
-# Troubleshoot
+# Troubleshooting
 
 ---
 ### Some of my coins have disappeared.
 
-Try running the client with "-rescan" or run the console command
-"repairwallet".
+Try running the client with `-rescan` or run the console command
+`repairwallet`.
 
----
-### How to get out of the loop of cycling app crashes (Microsoft Visual C++ Runtime Library Assertion failed)?
+### Error when sending a transaction
 
-Delete the content of the folder called 'txleveldb' in
-the data folder and restart.
+First, check that you have your wallet unlocked fully. If you have it locked
+for staking only, you will need to re-lock it and then unlock fully. Try
+sending the transaction after that. If you don't have it locked at all, you can 
+ignore this.
+
+If you see `Error: the transaction was rejected` or you see 
+an error saying "not enough fees", you may have too many small UTXOs (what's
+leftover from a transaction you received) to send a transaction. There is a
+maximums transaction size and so if a transaction tries to include to many UTXOs, 
+it can be impossible to send. To fix this, you can try consolidating them using the
+`consolidateunspent` [rpc](rpc "wikilink") command. For each of your addresses,
+try running `consolidateunspent <address>`. After this finishes, try sending
+the transaction again. This may require multiple rounds of the command if you
+have a lot of small transactions.

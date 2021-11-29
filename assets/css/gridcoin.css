@@ -1002,3 +1002,25 @@ footer {
     top: 50%;
     transform: translateY(-50%);
 }
+
+/** Wiki Page **/
+.docs-container h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.docs-container h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.docs-menu {
+  margin-top: 0.5rem;
+}
+
+.docs-container pre {
+  border: 1px solid #bbcddb;
+  border-radius: 0.5rem; 
+  background-color: #e9edf1;
+  padding: 1rem;
+}
