@@ -74,6 +74,10 @@ ul.display-list ul {
     }
 }
 
+.acquire-details ul {
+    list-style-type: none;
+}
+
 /*
  * Typography
  */
