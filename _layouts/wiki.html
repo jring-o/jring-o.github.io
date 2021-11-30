@@ -16,6 +16,7 @@
                                     {% if wikipage.layout == 'wiki'%}
                                       {% if page.url == wikipage.url %}
                                         {% assign current = 'active' %}
+                                        {% assign title = wikipage.title %}
                                       {% else %}
                                         {% assign current = '' %}
                                       {% endif %}
@@ -29,6 +30,10 @@
                           </div>
                     </div>
                     <div class="col-xl-9">
+                      <h1 class="echo-header">
+                        <span class="echo" aria-hidden="true">{{ title }}</span>
+                        {{ title }}
+                      </h1>
                       {{ content  }}
                     </div>
                 </div>
