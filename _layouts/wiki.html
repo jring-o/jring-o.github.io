@@ -8,18 +8,20 @@
             <div class="min-h-80 docs-container container">
                 <div class="row">
                     <div class="col-xl-3">
-                        <details class="docs-menu">
-                            <summary>Other Wiki Pages (click to view)</summary>
-                            <ul>
-                                {% for page in site.pages %}
-                                  {% if page.layout == 'wiki'%}
-                                    <li>
-                                      <a href="{{ page.url }}">{{ page.title }}</a>
-                                    </li>
-                                  {% endif %}
-                                {% endfor %}
-                            </ul>
-                        </details>
+                        <div class="docs-menu">
+                            <summary>Other Wiki Pages</summary>
+                            <nav>
+                              <ul>
+                                  {% for page in site.pages %}
+                                    {% if page.layout == 'wiki'%}
+                                      <li>
+                                        <a href="{{ page.url }}">{{ page.title }}</a>
+                                      </li>
+                                    {% endif %}
+                                  {% endfor %}
+                              </ul>
+                            </nav>
+                          </div>
                     </div>
                     <div class="col-xl-9">
                         {{ content  }}
