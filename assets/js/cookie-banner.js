@@ -78,9 +78,7 @@ SOFTWARE.
       var dnt = navigator.doNotTrack || navigator.msDoNotTrack || window.doNotTrack;
       var doNotTrack = dnt === 'yes' || dnt === 1 || dnt === '1';
 
-      if (doNotTrack) {
-        this.showBannerDnt();
-      } else { 
+      if (!doNotTrack) {
         this.showBanner();
       }
 
