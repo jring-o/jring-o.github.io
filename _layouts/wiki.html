@@ -11,11 +11,16 @@
                         <div class="docs-menu">
                             <summary>Other Wiki Pages</summary>
                             <nav>
-                              <ul>
-                                  {% for page in site.pages %}
-                                    {% if page.layout == 'wiki'%}
-                                      <li>
-                                        <a href="{{ page.url }}">{{ page.title }}</a>
+                              <ul class="navbar-nav">
+                                  {% for wikipage in site.pages %}
+                                    {% if wikipage.layout == 'wiki'%}
+                                      {% if page.url == wikipage.url %}
+                                        {% assign current = 'active' %}
+                                      {% else %}
+                                        {% assign current = '' %}
+                                      {% endif %}
+                                      <li class="nav-item">
+                                        <a class="nav-link {{ current }}" href="{{ wikipage.url }}">{{ wikipage.title }}</a>
                                       </li>
                                     {% endif %}
                                   {% endfor %}
@@ -24,7 +29,7 @@
                           </div>
                     </div>
                     <div class="col-xl-9">
-                        {{ content  }}
+                      {{ content  }}
                     </div>
                 </div>
             </div>
