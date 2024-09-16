@@ -1007,20 +1007,42 @@ footer {
 /**
  * Wiki
  */
- .docs-container h2 {
-  font-size: 2rem;
+.docs-container .docs-article h4,
+.docs-container .docs-article h3,
+.docs-container .docs-article h2,
+.docs-container .docs-article h1 {
+  font-size: 1.5rem;
   font-weight: normal;
+  padding: 1.5rem 0;
+  margin: 0;
+  font-weight: 600;
 }
 
-.docs-container h3 {
-  font-size: 1.5rem;
-  font-weight: 600;
+.docs-container .docs-article h3 {
+  font-size: 1.3rem;
+  
+}
+.docs-container .docs-article h4 {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 991.98px) {
+  .docs-menu {
+    text-align: center;
+  }
+  .docs-container .docs-article h2 { font-size: 1.15rem; }
+  .docs-container .docs-article h1 { font-size: 1.15rem; }
+  .docs-container .docs-article h3 { font-size: 1.1rem; }
+
+  .docs-container .nav-item {
+    padding: 0;
+  }
 }
 
 .docs-menu > summary {
   list-style: none;
   padding: 0.5rem 0;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 }
 
 .docs-menu .nav-link {
@@ -1032,15 +1054,35 @@ footer {
   font-weight: 600;
 }
 
-@media (max-width: 991.98px) {
-  .docs-menu {
-    text-align: center;
-  }
+.docs-article hr {
+  display: none;
 }
 
-.docs-container pre {
+.docs-article pre {
   border: 1px solid #bbcddb;
   border-radius: 0.5rem; 
   background-color: #e9edf1;
   padding: 1rem;
+}
+
+.docs-article table {
+  width: 100%;
+}
+
+.docs-article table td,
+.docs-article table th {
+  border-collapse: collapse;
+  border: 1px solid var(--line-light);
+  padding: 0.3rem;
+  font-size: 0.875rem;
+}
+
+.docs-article table th {
+  background-color: #6554c0;
+  font-weight: normal;
+  color: #FFFFFF;
+  text-align: center;
+}
+.docs-article table tr:nth-child(2n) {
+  background-color: var(--line-light);
 }
